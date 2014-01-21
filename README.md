@@ -1,6 +1,8 @@
 # Sassy brunch minimal is a quick minimal skeleton for any webapp.
 A minimalistic implementation of brunch with sass that includes a few extras: coffeescript, bootstrap3, underscore, bourbon, font-awesome and jquery.
 
+* Inspired by (and some code from) [brunch-with-sass](https://github.com/stefanvermaas/brunch-with-sass)
+
 ## Installation
 Clone this repo manually with Git or use `brunch new gh:bradens/sassy-brunch-minimal`.
 
@@ -12,3 +14,4 @@ Clone this repo manually with Git or use `brunch new gh:bradens/sassy-brunch-min
 * `public/` dir is fully auto-generated and served by HTTP server.
 * Write your code in `client`, or `test` dirs.
 * For production, build minified project with `brunch build --optimize`
+
