@@ -1,20 +1,27 @@
 exports.config =
-  # See http://brunch.io/#documentation for docs.
+  paths:
+    watched: ["client", "vendor"]
+
   files:
     javascripts:
+      defaultExtension: "coffee"
       joinTo:
-        'javascripts/app.js': /^app/
-        'javascripts/vendor.js': /^(?!app)/
+        'application.js': /^(client)/
+        'vendor.js': /^(bower_components|vendor)/
 
     stylesheets:
       defaultExtension: 'scss'
-      joinTo: 
-        'stylesheets/app.css'
-
-    templates:
-      joinTo: 'javascripts/app.js'
+      joinTo:
+        'app.css': /^client\/styles\/app.scss/
+        'vendor.css': /^bower_components/
 
   # Activate the brunch plugins
-  plugins: 
+  plugins:
     sass:
       debug: 'comments'
+
+  modules:
+    nameCleaner: (path) ->
+      path
+        # Strip the client/ prefix from module names
+        .replace(/^client\//, '')

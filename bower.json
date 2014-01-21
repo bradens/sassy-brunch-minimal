@@ -1,22 +1,23 @@
 {
-  "name": "example-app",
-  "version": "0.1.0",
-  "main": "public/javascripts/app.js",
+  "name": "brunch-with-sass-minimal",
+  "version": "0.0.1",
+  "main": "public/app.js",
+  "repository": "http://github.com/bradens/brunch-with-sass-minimal",
   "dependencies": {
-    "chaplin": "~0.10.0",
+    "bootstrap-sass": "~3.0",
+    "jquery": "~2.0.3",
+    "underscore": "~1.5.2",
     "console-polyfill": "~0.1.0",
-    "lodash": "~1.3.1",
-    "jquery": "~2.0.2",
-    "normalize-css": "~2.1.2",
-    "h5bp-helpers": "~0.1.0"
+    "normalize-css": "~2.1.2"
   },
   "overrides": {
-    "backbone": {
-      "dependencies": {
-        "lodash": "*",
-        "jquery": "*"
-      },
-      "main": "backbone.js"
+    "bootstrap-sass": {
+      "ignore": [
+        "*"
+      ]
+    },
+    "underscore": {
+      "main": "underscore.js"
     }
   }
 }
