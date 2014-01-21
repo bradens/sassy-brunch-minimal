@@ -4,7 +4,7 @@ A minimalistic implementation of brunch with sass that includes a few extras: co
 * Inspired by (and some code from) [brunch-with-sass](https://github.com/stefanvermaas/brunch-with-sass)
 
 ## Installation
-Clone this repo manually with Git or use `brunch new gh:bradens/sassy-brunch-minimal`.
+Clone this repo manually with Git or use `brunch new sassy-brunch-minimal`.
 
 ## Getting started
 * Install [Brunch](http://brunch.io): `npm install -g brunch`.
